@@ -1,0 +1,26 @@
+---
+extends: base.j2
+title: Careers at MuirTec
+description: Careers
+---
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ media_url('css/careers.css') }}">
+{% endblock %}
+
+{% block main -%}
+
+{% filter markdown|typogrify -%}
+If you are excited about furthering your career in a dynamic and innovative organization,
+please refer to the application instructions contained in each posting (if applicable).
+
+Email applications and general job-related enquiries to <a href="mailto:careers@muirtec.com">careers@muirtec.com</a>.
+All correspondence will be retained on file for six months, and will be held in confidence.
+
+We thank all candidates for their interest in joining MuirTec, however,
+only those candidates invited for an interview will be contacted.
+
+{%- endfilter %}
+{%- endblock %}
+

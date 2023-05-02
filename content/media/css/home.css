@@ -1,0 +1,32 @@
+.slideshow {
+    width: 400px;
+    height: 400px;
+    margin-right: 25px;
+    position: relative;
+    float: left;
+    padding: 10px;
+    border: 1px solid #14396a;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.slideshow img { 
+    position: absolute; 
+    width: 100%;
+    height: auto;
+    top: 0px; 
+    left: 0px;
+    background-color: black;
+} 
+
+section.content{
+    min-height: 424px;
+}
+
+#catchphrase {
+    font-size: 125%;
+    font-style: italic;
+    text-align: center;
+    color: #567194;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

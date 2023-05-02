@@ -1,0 +1,42 @@
+---
+extends: base.j2
+title: MuirTec Inc.
+description: We design solutions
+---
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ media_url('css/home.css') }}">
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+<script src="{{ media_url('js/slideshow.js') }}"></script>
+{% endblock %}
+
+{% block main -%}
+<div class="slideshow">
+    <img src="{{ media_url('img/slideshow/slide1.jpg') }}" alt="Your time in good hands"/>
+    <img src="{{ media_url('img/slideshow/slide2.jpg') }}" alt="Your time in good hands"/>
+    <img src="{{ media_url('img/slideshow/slide3.jpg') }}" alt="Your time in good hands"/>
+    <img src="{{ media_url('img/slideshow/slide4.jpg') }}" alt="Your time in good hands"/>
+    <img src="{{ media_url('img/slideshow/slide5.jpg') }}" alt="Your time in good hands"/>
+</div>
+
+<p id="catchphrase">
+At MuirTec we design solutions.
+</p>
+
+{% filter markdown|typogrify -%}
+
+MuirTec Inc. provides quality structural and civil engineering
+services. We work on small or large scale projects for residential,
+industrial, and municipal clients. We are able to adapt and rise to
+the challenges of any project, regardless of size or complexity.
+
+Our services have been used by architects, building contractors,
+developers, local municipalities, larger government bodies and
+more.
+{%- endfilter %}
+
+{%- endblock %}

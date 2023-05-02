@@ -1,0 +1,77 @@
+---
+extends: base.j2
+title: MuirTec Services
+description: Services
+---
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ media_url('css/services.css') }}">
+{% endblock %}
+
+{% block main -%}
+
+<div id="service-list">
+
+{% filter markdown|typogrify -%}
+
+* <div class="service-content">
+    ![]({{ media_url('img/services/thumb1.jpg') }})
+    <h4>Structural Design</h4>
+    <p>
+    &bull; Structural steel frames for buildings (industrial, commercial and residential)  
+    &bull; Industrial equipment supports  
+    &bull; Structural plate work for tanks and custom vessels  
+    &bull; Reinforced concrete and foundations  
+    &bull; Structural masonry design  
+    &bull; Structural timber  
+    &bull; Welding design and shop certification for CWB  
+    &bull; Hydraulic structure design  
+    &bull; Heavy transport design  
+    &bull; Pollution control equipment support structure design  
+    &bull; Rigging design  
+    &bull; Bridge design  
+    &bull; Crane repair design and load test supervision  
+    &bull; Water control gates design  
+    &bull; Hoist tower design  
+    &bull; Trash racks design  
+    </p>
+</div>
+* <div class="service-content">
+    ![]({{ media_url('img/services/thumb2.jpg') }})
+    <h4>Construction</h4>
+    &bull; Inspection during construction  
+    &bull; Engineering for rigging and heavy lifts  
+    &bull; Engineering design for shoring and scaffold
+</div>
+* <div class="service-content">
+    ![]({{ media_url('img/services/thumb3.jpg') }})
+    <h4>Restoration</h4>
+    &bull; Structural restoration of buildings and bridges  
+    &bull; Concrete restoration for parking structures, balconies, etc.  
+    &bull; Rehabilitation of heritage buildings  
+    &bull; Masonry restoration
+</div>
+* <div class="service-content">
+    ![]({{ media_url('img/services/thumb4.jpg') }})
+    <h4>Condition Surveys</h4>
+    &bull; Reinforced concrete and steel  
+    &bull; Buildings and structural aspect of industrial equipment  
+    &bull; Structural condition survey and report
+</div>
+* <div class="service-content">
+    ![]({{ media_url('img/services/thumb5.jpg') }})
+    <h4>Analysis</h4>
+    &bull; Computer aided finite element analysis and design (Staad Pro and S-Frame)
+</div>
+* <div class="service-content">
+    ![]({{ media_url('img/services/thumb14.jpg') }})
+    <h4>Partner Services</h4>
+    Architectural, mechanical engineering, electrical engineering, geotechnical engineering and
+    building science services offered through association with other known companies and
+    individuals.
+</div>
+{%- endfilter %}
+
+</div>
+{%- endblock %}

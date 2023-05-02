@@ -1,0 +1,17 @@
+#map {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-left: 25px;
+    border: 1px solid #14396a;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+section.content{
+    min-height: 500px;
+}
+
+section.content iframe {
+    width: 100%;
+    height: 100%;
+}
